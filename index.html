@@ -2,37 +2,62 @@
 <html>
 
 <head>
-    <title>Welcomept</title>
+	<title>mjr</title>
+	<link rel="shortcut icon" href="favicon.ico">
     <meta name="yandex-tableau-widget" content="logo=https://tonighty.github.io/logo.png, color=#E91E63, feed=feed.json" />
-    <style type="text/css">
-    a {
-        font-weight: 700;
-        color: white;
-        text-decoration: none;
-        padding: .8em 1em calc(.8em + 3px);
-        border-radius: 3px;
-        background: rgb(64, 199, 129);
-        box-shadow: 0 -3px rgb(53, 167, 110) inset;
-        transition: 0.2s;
-        width: 50px;
-        height: 50px;
-    }
-    
-    a:hover {
-        background: rgb(53, 167, 110);
-    }
-    
-    a:active {
-        background: rgb(33, 147, 90);
-        box-shadow: 0 3px rgb(33, 147, 90) inset;
-    }
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400&amp;subset=cyrillic" rel="stylesheet">
+	<style type="text/css">
+    body {
+		font-family: 'Fira Sans', sans-serif;
+		font-weight: 300;
+	}
+	h1,
+	h2 {
+		font-weight: 300;
+	}
+	h1 {
+		font-size: 2.3rem;
+	}
+	h1 > a {
+		font-size: 1rem;
+	}
+	.content {
+		max-width: 600px;
+		margin: 0 auto;
+		padding-top: 2rem;
+	}
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	img {
+		width: 3em;
+		filter: grayscale(10);
+		transition: all 0.2s;
+	}
+	img:hover {
+		filter: grayscale(0);
+	}
+	footer {
+		text-align: right;
+	}
     </style>
 </head>
-
-<body style="padding: 10px">
-	<a href="/Gauss">Решение СЛАУ методом гаусса</a>
-	<a href="/CalcJS">Калькулятор</a>
-	<a href="/Viewer">Viewer</a>
+<body>
+	<div class="content">
+		<h1>mjr <a href="https://t.me/majorov_ept">@majorov_ept</a></h1>
+		<h2>My projects:</h2>
+		<ul>
+			<li><a href="/Gauss">Решение СЛАУ методом гаусса</a></li>
+			<li><a href="/CalcJS">Калькулятор</a></li>
+			<li><a href="/Viewer">Maze Game</a></li>
+		</ul>
+		<hr>
+		<footer>
+			<p>© mjr 2018</p>
+		</footer>
+	</div>
 </body>
-
 </html>
