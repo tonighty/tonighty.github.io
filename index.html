@@ -34,12 +34,10 @@
 		text-decoration: underline;
 	}
 	img {
-		width: 3em;
-		filter: grayscale(10);
-		transition: all 0.2s;
+		max-width: 300px;
 	}
-	img:hover {
-		filter: grayscale(0);
+	.mjr {
+		text-align: center;
 	}
 	footer {
 		text-align: right;
@@ -48,7 +46,10 @@
 </head>
 <body>
 	<div class="content">
-		<h1>mjr <a href="https://t.me/majorov_ept">@majorov_ept</a></h1>
+		<div class="mjr">
+			<img src="mjr.svg" alt="mjr">
+		</div>
+		<h1>Vyacheslav Majorov <a href="https://t.me/majorov_ept">@majorov_ept</a></h1>
 		<h2>My projects:</h2>
 		<ul>
 			<li><a href="/Gauss">Решение СЛАУ методом гаусса</a></li>
