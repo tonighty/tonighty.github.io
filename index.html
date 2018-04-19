@@ -55,13 +55,18 @@
 		text-decoration: underline;
 	}
 	img {
+		position: relative;
 		max-width: 300px;
 		filter: brightness(0);
-		transition: filter 0.3s;
+		transition: filter 1s;
 	}
 	img:hover {
 		filter: none;
-		transition: filter 0.3s;
+		transition: filter 1s ease-in;
+	}
+	img.click {
+		animation: imgclr 1s ease;
+		animation-iteration-count: infinite;
 	}
 	.mjr {
 		text-align: center;
@@ -69,12 +74,55 @@
 	footer {
 		text-align: right;
 	}
+	@keyframes imgclr {
+		0% {
+			left: 0;
+		}
+		10% {
+			left: -5px;
+		}
+		20% {
+			left: 5px;
+		}
+		30% {
+			left: -5px;
+		}
+		40% {
+			left: 5px;
+		}
+		50% {
+			left: -5px;
+		}
+		60% {
+			left: 5px;
+		}
+		70% {
+			left: -5px;
+		}
+		80% {
+			left: 5px;
+		}
+		90% {
+			left: -5px;
+		}
+		100% {
+			left: 0;
+		}
+	}
     </style>
 </head>
 <body>
 	<div class="content">
 		<div class="mjr">
-			<img src="mjr.svg" alt="mjr">
+			<img src="mjr.svg" alt="mjr" onclick='shake(this)'>
+			<script>
+				var timeoutID = -1;
+				function shake(image) {
+					clearTimeout(timeoutID)
+					image.classList.add('click');
+					timeoutID = setTimeout(function(){image.classList.remove('click')}, 1000);
+				}
+			</script>
 		</div>
 		<h1>Vyacheslav Majorov <a href="https://t.me/majorov_ept">@majorov_ept</a></h1>
 		<h2>My projects:</h2>
